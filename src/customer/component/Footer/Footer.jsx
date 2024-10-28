@@ -113,10 +113,10 @@ const Footer = () => {
             &copy; 2024 My Company. All rights reserved.
           </Typography>
           <Typography variant="body2" component="p" align="center">
-            Love uhh Akku..
+           .
           </Typography>
           <Typography variant="body2" component="p" align="center">
-            Icons made by Me and Akku..{'  '}
+           
             {/* <Link href="https://www.Flipkart.com" color="inherit" underline="always">
               Flipkart 
             </Link>
