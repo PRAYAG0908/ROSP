@@ -1,47 +1,38 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import HomePage from './../pages/HomePage/HomePage';
-import Cart from './../component/Cart/Cart';
-import Navigation from '../component/Navigation/Navigation';
-import Footer from '../component/Footer/Footer';
-import Product from '../component/Product/Product';
-import ProductDetails from '../component/ProductDetails/ProductDetails';
-import Checkout from '../component/Checkout/Checkout';
-import Order from '../component/Order/Order';
-import OrderDetails from '../component/Order/OrderDetails';
-
-const CustomerRoutes = () => {
-  return (
-    <div>
-      
-      <div>
-
-      <Navigation/>
-
-      </div>
-      <Routes>
-      <Route path='/login' element={<HomePage/>}></Route>
-      <Route path='/register' element={<HomePage/>}></Route>
-
-        <Route path='/' element={<HomePage/>}></Route>
-        <Route path='/cart' element={<Cart/>}></Route>
-        <Route path='/:levelOne/:levelTwo/:levelThree' element={<Product/>}></Route>
-        <Route path='/product/:productId' element={<ProductDetails/>}></Route>
-        <Route path='/checkout' element={<Checkout/>}></Route>
-        <Route path='/account/order' element={<Order/>}></Route>
-        <Route path='/account/order/:orderId' element={<OrderDetails/>}></Route>
-        
-
-       
-        
-
-
-      </Routes>
-      <div>
-      <Footer/>
-      </div>
-    </div>
-  )
+.App {
+  text-align: center;
 }
 
-export default CustomerRoutes
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
